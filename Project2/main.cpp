@@ -24,7 +24,6 @@ public:
 	Numbers();
 	Numbers(T1 _a, T2 _b);
 	void Init(T1 _a, T2 _b);
-	void InitRandom();
 	void Output();
 	T1 GetA() { return a; }
 	T2 GetB() { return b; }
@@ -59,12 +58,6 @@ void Numbers<T1, T2>::Init(T1 _a, T2 _b)
 	b = _b;
 }
 
-template<class T1, class T2>
-void Numbers<T1, T2>::InitRandom()
-{
-	a = rand() % 100;
-	b = rand() % 100;
-}
 
 template<class T1, class T2>
 void Numbers<T1, T2>::Output()
